@@ -2,6 +2,39 @@
 <html>
 
 <head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 400px; /* Tamaño máximo del formulario */
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: left;
+    }
+  
+    label, input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    input[type="submit"] {
+      width: 100%; /* Hace que el botón ocupe todo el ancho del formulario */
+    }
+  </style>
+  
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -116,40 +149,42 @@
   </div>
 
   <h1>Formulario de Nutrición y Gestación</h1>
-  <form id="gestationForm">
-      <section id="personalInfo">
-          <h2>Información Personal</h2>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required><br>
 
-          <label for="documento">Documento:</label>
-          <input type="text" id="documento" name="documento" required><br>
+<form id="gestationForm">
+  <section id="personalInfo">
+    <h2>Información Personal</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-          <label for="edad">Edad:</label>
-          <input type="number" id="edad" name="edad" required><br>
+    <label for="documento">Documento:</label>
+    <input type="text" id="documento" name="documento" required>
 
-          <label for="eps">EPS:</label>
-          <input type="text" id="eps" name="eps" required><br>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required>
 
-          <label for="semanasGestacion">Semanas de Gestación:</label>
-          <input type="number" id="semanasGestacion" name="semanasGestacion" required><br>
+    <label for="eps">EPS:</label>
+    <input type="text" id="eps" name="eps" required>
 
-          <label for="ciudad">Ciudad y Lugar de Residencia:</label>
-          <input type="text" id="ciudad" name="ciudad" required><br>
+    <label for="semanasGestacion">Semanas de Gestación:</label>
+    <input type="number" id="semanasGestacion" name="semanasGestacion" required>
 
-          <label for="numeroCelular">Número de Celular:</label>
-          <input type="tel" id="numeroCelular" name="numeroCelular" required><br>
+    <label for="ciudad">Ciudad y Lugar de Residencia:</label>
+    <input type="text" id="ciudad" name="ciudad" required>
 
-          <label for="pesoActual">Peso Actual</label>
-          <input type="tel" id="pesoActual" name="pesoActual" required><br>
-      </section>
+    <label for="numeroCelular">Número de Celular:</label>
+    <input type="tel" id="numeroCelular" name="numeroCelular" required>
 
-      <!-- Otras preguntas y recomendaciones pueden ser agregadas aquí -->
+    <label for="pesoActual">Peso Actual</label>
+    <input type="tel" id="pesoActual" name="pesoActual" required>
+  </section>
 
-      <input type="submit" value="Enviar">
-  </form>
+  <!-- Otras preguntas y recomendaciones pueden ser agregadas aquí -->
 
-  <script src="script.js"></script>
+  <input type="submit" value="Enviar">
+</form>
+
+<script src="script.js"></script>
+
 
   <!-- discount section
   <div class="layout_padding-top">
