@@ -3,29 +3,45 @@
 
 <head>
   <style>
-    
+    /* Estilos del formulario a la izquierda */
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left {
+      width: 48%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Estilos del cálculo del IMC a la derecha */
+    .right {
+      width: 48%;
+      padding: 20px;
+      box-sizing: border-box;
+      border-left: 1px solid #ccc; /* Línea divisoria */
+    }
+
     h1 {
       text-align: center;
     }
-  
+
     form {
-      width: 100%;
-      max-width: 400px; /* Tamaño máximo del formulario */
-      padding: 20px;
-      box-sizing: border-box;
-      text-align: left;
+      max-width: 100%;
     }
-  
+
     label, input {
       display: block;
       width: 100%;
       margin-bottom: 10px;
     }
-  
+
     input[type="submit"] {
       width: 100%; /* Hace que el botón ocupe todo el ancho del formulario */
     }
   </style>
+
   
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -142,7 +158,9 @@
 
   <h1>Formulario de Nutrición y Gestación</h1>
 
-<form id="gestationForm">
+<div class="container">
+  <div class="left"></div>
+   <form id="gestationForm">
   <section id="personalInfo">
     <h2>Información Personal</h2>
     <label for="nombre">Nombre:</label>
@@ -197,8 +215,14 @@
   <br>
   <input type="submit" value="Enviar">
 </form>
+</div>
 
-<script src="script.js"></script>
+ <div class="right">
+   <h2>Índice de Masa Corporal (IMC)</h2>
+   <p id="imcResult">El IMC se mostrará aquí.</p>
+ </div>
+</div>
+<script src="js/script.js"></script>
 
 
   <!-- discount section
