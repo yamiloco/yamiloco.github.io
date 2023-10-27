@@ -32,6 +32,8 @@ function calcularIMC() {
         mensajeIMC += "13. Consumirlas como parte de los refrigerios. Evite consumir productos de paquete.\n";
         mensajeIMC += "14. Aprovechar las que estén en cosecha y sean de la región para disminuir los costos de la alimentación en la familia.\n";
         mensajeIMC += "15. Disponer, en el hogar, de frutas y verduras listas para consumir en lugares visibles para motivar su ingesta en cualquier momento del día.\n";
+        mensajeIMC += "NOTA: \n";
+        mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
   
         imcResult.textContent = mensajeIMC;
       } else if (imc >= 20.0 && imc < 25.0) {
@@ -56,4 +58,5 @@ function calcularIMC() {
   document.getElementById("gestationForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita el envío del formulario por defecto
     calcularIMC(); // Calcula el IMC y muestra las recomendaciones
-  });  
+  });
+  
