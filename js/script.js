@@ -1,4 +1,4 @@
-// Función para calcular el IMC
+// Función para calcular el IMC y clasificar según el rango de peso
 function calcularIMC() {
     // Obtén los valores de peso y talla del formulario
     const peso = parseFloat(document.getElementById("pesoActual").value);
@@ -9,18 +9,20 @@ function calcularIMC() {
       const imc = peso / (talla * talla);
   
       // Muestra el resultado en el elemento "imcResult"
-      document.getElementById("imcResult").textContent = `Tu IMC es: ${imc.toFixed(2)}`;
+      let mensajeIMC = `Tu IMC es: ${imc.toFixed(2)} - `;
   
-      // Ahora puedes agregar una lógica adicional para interpretar el IMC y mostrar un mensaje informativo.
-      if (imc < 18.5) {
-        document.getElementById("imcResult").textContent += " (Bajo peso)";
-      } else if (imc >= 18.5 && imc < 24.9) {
-        document.getElementById("imcResult").textContent += " (Peso saludable)";
-      } else if (imc >= 25 && imc < 29.9) {
-        document.getElementById("imcResult").textContent += " (Sobrepeso)";
+      // Clasifica según el rango de peso para la edad gestacional
+      if (imc < 20.0) {
+        mensajeIMC += "BAJO PESO PARA LA EDAD GESTACIONAL";
+      } else if (imc >= 20.0 && imc < 25.0) {
+        mensajeIMC += "PESO ADECUADO PARA LA EDAD GESTACIONAL";
+      } else if (imc >= 25.0 && imc < 30.0) {
+        mensajeIMC += "SOBREPESO";
       } else {
-        document.getElementById("imcResult").textContent += " (Obesidad)";
+        mensajeIMC += "OBESIDAD";
       }
+  
+      document.getElementById("imcResult").textContent = mensajeIMC;
     } else {
       // Muestra un mensaje de error si los valores no son válidos
       document.getElementById("imcResult").textContent = "Por favor, ingresa valores válidos.";
@@ -31,5 +33,4 @@ function calcularIMC() {
   document.getElementById("gestationForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita el envío del formulario por defecto
     calcularIMC(); // Calcula el IMC
-  });
-  
+  });  
