@@ -6,21 +6,23 @@
     /* Estilos del formulario a la izquierda */
     .container2 {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
     }
 
     .left {
-      width: 48%;
+      width: 100%;
       padding: 20px;
       box-sizing: border-box;
     }
 
     /* Estilos del cálculo del IMC a la derecha */
     .right {
-      width: 48%;
+      width: 100%;
       padding: 20px;
       box-sizing: border-box;
-      border-left: 1px solid #ccc; /* Línea divisoria */
+      border-top: 1px solid #ccc; /* Línea divisoria */
     }
 
     h1 {

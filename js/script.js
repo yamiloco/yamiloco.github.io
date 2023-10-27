@@ -15,7 +15,7 @@ function calcularIMC() {
       // Clasifica según el rango de peso para la edad gestacional y muestra recomendaciones
       if (imc < 20.0) {
         mensajeIMC += `<span style="color: aquamarine;">BAJO PESO PARA LA EDAD GESTACIONAL</span>`;
-        mensajeIMC += "\n\nRECOMENDACIONES:\n";
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span>\n";
         mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 12 a 18 kg.\n";
         mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.\n";
         mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).\n";
@@ -31,7 +31,7 @@ function calcularIMC() {
         mensajeIMC += "13. Consumirlas como parte de los refrigerios. Evite consumir productos de paquete.\n";
         mensajeIMC += "14. Aprovechar las que estén en cosecha y sean de la región para disminuir los costos de la alimentación en la familia.\n";
         mensajeIMC += "15. Disponer, en el hogar, de frutas y verduras listas para consumir en lugares visibles para motivar su ingesta en cualquier momento del día.\n";
-        mensajeIMC += "NOTA \n";
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTAS:</span>\n";
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
       } else {
         mensajeIMC += "PESO ADECUADO PARA LA EDAD GESTACIONAL";
