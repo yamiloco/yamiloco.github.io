@@ -1,3 +1,17 @@
+// Función para borrar el formulario y el resultado del IMC
+function borrarFormulario() {
+  const form = document.getElementById("gestationForm");
+  form.reset(); // Restablece el formulario
+
+  const imcResult = document.getElementById("imcResult");
+  imcResult.innerHTML = ""; // Borra el resultado del IMC
+}
+
+// Asocia la función de borrado al botón "Borrar"
+document.getElementById("borrarBtn").addEventListener("click", function() {
+  borrarFormulario();
+});
+
 // Función para calcular el IMC y mostrar recomendaciones
 function calcularIMC() {
     // Restablece el contenido de "imcResult" a blanco al comenzar
