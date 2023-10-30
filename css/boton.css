@@ -12,7 +12,7 @@
   }
   
  .bienvenida {
-    text-align: left;
+    text-align: justify;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
 }
