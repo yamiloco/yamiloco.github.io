@@ -1,0 +1,13 @@
+/* Estilos personalizados para los botones */
+.custom-button {
+    width: 50%; /* Establece el ancho al 50% para ambos botones */
+    padding: 10px; /* Añade un relleno para espaciar los botones */
+    margin: 5px; /* Añade un margen para separar los botones */
+  }
+  
+  /* Estilos para el contenedor de botones */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
