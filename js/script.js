@@ -32,7 +32,7 @@ function calcularIMC() {
   
       // Clasifica según el rango de peso para la edad gestacional y muestra recomendaciones
       if (imc < 20.0) {
-        mensajeIMC += '<span style="color: FireBrick;">BAJO PESO PARA LA EDAD GESTACIONAL</span><br><br>';
+        mensajeIMC += '<span style="color: FireBrick; font-weight: bold;">BAJO PESO PARA LA EDAD GESTACIONAL</span><br><br>';
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span><br>";
         mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 12 a 18 kg.<br>\n";
         mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
@@ -52,7 +52,7 @@ function calcularIMC() {
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTAS:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
       } else if (imc >= 20.0 && imc <= 24.9) {
-        mensajeIMC += '<span style="color: DeepPink;">PESO ADECUADA PARA LA EDAD GESTACIONAL</span><br><br>';
+        mensajeIMC += '<span style="color: DeepPink; font-weight: bold;">PESO ADECUADA PARA LA EDAD GESTACIONAL</span><br><br>';
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span><br>";
         mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 10 a 13 kg.<br>\n";
         mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
@@ -75,7 +75,7 @@ function calcularIMC() {
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
         
       } else if (imc >= 25.0 && imc <= 29.9) {
-        mensajeIMC += '<span style="color: OrangeRed;">SOBREPESO</span><br><br>';
+        mensajeIMC += '<span style="color: OrangeRed; font-weight: bold;">SOBREPESO</span><br><br>';
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span><br>";
         mensajeIMC += "1.	Según su clasificacion nutricional al finalizar el embarazo debe obtener una ganancia de peso de 7 a 10 kg <br>\n";
         mensajeIMC += "2.	Asistir a controles prenatales cada mes para seguimiento y manejo según criterio medico(nutricion)<br>\n";
@@ -89,7 +89,7 @@ function calcularIMC() {
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTA:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACION ES GENERAL PARA SU CLASIFICACION NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL(NUTRICION) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICION ECONOMICA Y PREFERENCIAS"
       } else {
-        mensajeIMC += '<span style="color: DarkBlue;">OBESIDAD</span><br><br>';
+        mensajeIMC += '<span style="color: DarkBlue; font-weight: bold;">OBESIDAD</span><br><br>';
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span><br>";
         mensajeIMC += "Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 6 a 7 kg.<br>\n";
         mensajeIMC += "Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico (nutricionista).<br>\n";
