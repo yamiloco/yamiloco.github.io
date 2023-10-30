@@ -89,7 +89,7 @@ function calcularIMC() {
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTA:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACION ES GENERAL PARA SU CLASIFICACION NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL(NUTRICION) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICION ECONOMICA Y PREFERENCIAS"
       } else {
-        mensajeIMC += '<span style="color: Indigo;">OBESIDAD</span><br><br>';
+        mensajeIMC += '<span style="color: DarkBlue;">OBESIDAD</span><br><br>';
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span><br>";
         mensajeIMC += "Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 6 a 7 kg.<br>\n";
         mensajeIMC += "Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico (nutricionista).<br>\n";
