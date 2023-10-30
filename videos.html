@@ -3,30 +3,31 @@
 
 <head>
   <style>
-    /* Centrar el título principal */
-    h2 {
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         text-align: center;
     }
-    
-    /* Estilo del contenedor de la tabla */
-    .table-container {
-      margin: 0 150px; /* Agregar espacio entre la tabla y los bordes izquierdo y derecho de la página */
-      padding: 20px; /* Agregar espacio entre la tabla y los bordes de la página */
+
+    .video-container {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
     }
 
-    /* Estilo de la tabla */
-    table {
-        border-collapse: collapse;
-        width: 100%; /* Para asegurarse de que la tabla ocupe todo el ancho del contenedor */
-    }
-    
-    table, th, td {
-        border: 2px solid LimeGreen; /* Color de las divisiones de la tabla */
+    .video-thumbnail {
+        max-width: 100%;
     }
 
-    th, td {
-        padding: 10px; /* Añadir espacio interno a celdas de la tabla */
-        text-align: justify; /* Justificar el texto dentro de las celdas */
+    .video-title {
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .video-description {
+        font-size: 14px;
     }
 </style>
 
@@ -142,32 +143,57 @@
     <!-- end header section -->
   </div>
 
-<!--Tabla-->
-<!-- Agregar el título "TABUS EN EL EMBARAZO" -->
-<br>
-<h2>TABUS EN EL EMBARAZO</h2>
+<!--Videos-->
 
-<!-- Agregar la tabla de 4x2 -->
-<div class="table-container">
-<table>
-    <tr>
-      <td style="text-align: center;"><strong>TABU</strong></td>
-      <td style="text-align: center;"><strong>RECOMENDACION</strong></td>
-    </tr>
-    <tr>
-        <td>“SE DEBE COMER POR DOS”</td>
-        <td>En el embarazo se produce un aumento de las necesidades energéticas y de determinados nutrientes, se recomienda ingerir alimentos 5 veces al día (desayuno, medias nueves, almuerzo, onces y cena) sin aumentar las cantidades.</td>
-    </tr>
-    <tr>
-        <td>“NO COMER DETERMINADOS ALIMENTOS (ANTOJOS) VA A HACER QUE MI BEBÉ NAZCA CON LA BOCA ABIERTA”</td>
-        <td>Si el alimento que desea ingerir está contraindicado, súplalo por otro que le genere el mismo sabor. Si puede consumir el alimento sin ningún problema, no hay base científica que respalde estas afirmaciones.</td>
-    </tr>
-    <tr>
-        <td>“PRESENTAR SOBREPESO Y OBESIDAD NO AFECTA AL BEBÉ”</td>
-        <td>Está demostrado que las mujeres que presentan sobrepeso y obesidad previo a la gestación tienen un riesgo alto de complicaciones: como trastornos del metabolismo de los carbohidratos, trastornos hipertensivos, así como una mayor necesidad de cesárea, macrosomía y acidosis fetales, de ahí la importancia de los cuidados prenatales con adecuación de peso en aquellas mujeres que prevén quedarse embarazadas y el cuidadoso control de éste durante la gestación.</td>
-    </tr>
-</table>
+<h1>Videos que te ayudaran...</h1>
+  <div class="bienvenida">
+    <h5>"¡Bienvenidos! Estamos encantados de tenerte en nuestra página web. Si estás buscando información valiosa sobre el embarazo y la nutrición, estás en el lugar adecuado. Te invitamos a explorar nuestra colección de videos informativos y educativos. Desde consejos para una alimentación saludable durante el embarazo hasta información crucial sobre el desarrollo del bebé, nuestros videos están diseñados para guiarte en este emocionante viaje. No te pierdas la oportunidad de aprender y prepararte para la maravillosa etapa del embarazo. ¡Haz clic en los videos y sumérgete en un mundo de conocimiento!"</h5>
+ </div>
+
+ <div class="video-grid">
+  <!-- Video 1 -->
+  <div class="video-container">
+      <iframe width="300" height="200" src="https://www.youtube.com/watch?v=3Ir_8ZdyPkI"></iframe>
+      <p class="video-title">Título del Video 1</p>
+      <p class="video-description">Descripción del Video 1.</p>
+  </div>
+
+  <!-- Video 2 -->
+  <div class="video-container">
+      <iframe width="300" height="200" src="https://www.youtube.com/watch?v=spRcfWdfqMY"></iframe>
+      <p class="video-title">Título del Video 2</p>
+      <p class="video-description">Descripción del Video 2.</p>
+  </div>
+
+  <!-- Video 3 -->
+  <div class="video-container">
+      <iframe width="300" height="200" src="https://www.youtube.com/watch?v=FRpEOKfMhHU"></iframe>
+      <p class="video-title">Título del Video 3</p>
+      <p class="video-description">Descripción del Video 3.</p>
+  </div>
+
+  <!-- Video 4 -->
+  <div class="video-container">
+      <iframe width="300" height="200" src="https://www.youtube.com/watch?v=bO5U9xM3UO4"></iframe>
+      <p class="video-title">Título del Video 4</p>
+      <p class="video-description">Descripción del Video 4.</p>
+  </div>
+
+  <!-- Video 5 -->
+  <div class="video-container">
+      <iframe width="300" height="200" src="https://www.youtube.com/watch?v=D28cW3qYiRc"></iframe>
+      <p class="video-title">Título del Video 5</p>
+      <p class="video-description">Descripción del Video 5.</p>
+  </div>
+
+  <!-- Video 6 -->
+  <div class="video-container">
+      <iframe width="300" height="200" src="https://www.youtube.com/watch?v=bmH8rFgDG9s"></iframe>
+      <p class="video-title">Título del Video 6</p>
+      <p class="video-description">Descripción del Video 6.</p>
+  </div>
 </div>
+
 
  
 <!-- info section -->
