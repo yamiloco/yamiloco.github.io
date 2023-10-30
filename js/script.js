@@ -1,5 +1,9 @@
 // Función para calcular el IMC y mostrar recomendaciones
 function calcularIMC() {
+    // Restablece el contenido de "imcResult" a blanco al comenzar
+    const imcResult = document.getElementById("imcResult");
+    imcResult.innerHTML = "";
+
     // Obtén los valores de peso y talla del formulario
     const peso = parseFloat(document.getElementById("pesoActual").value);
     const talla = parseFloat(document.getElementById("talla").value);
@@ -57,11 +61,33 @@ function calcularIMC() {
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
         
       } else if (imc >= 25.0 && imc <= 29.9) {
-        mensajeIMC += "SOBREPESO";
-        // Otras recomendaciones específicas para sobrepeso
+        mensajeIMC += '<span style="color: red;">SOBREPESO</span><br><br>';
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span><br>";
+        mensajeIMC += "1.	Según su clasificacion nutricional al finalizar el embarazo debe obtener una ganancia de peso de 7 a 10 kg <br>\n";
+        mensajeIMC += "2.	Asistir a controles prenatales cada mes para seguimiento y manejo según criterio medico(nutricion)<br>\n";
+        mensajeIMC += "3.	Realizar toma oportuna y adecuada de micronutrientes (acido folico sulfato y calcio).<br>\n";
+        mensajeIMC += "4.	Realizar actividad fisica moderada como caminar 10 min 2 veces al dia.<br>\n";
+        mensajeIMC += "5.	Alimentacion salidable rica en proteinas, frutas, verduras, y legunbres, sigfuiendo las recomendaciones brindadas por el profesional (nutricionista).<br>\n";
+        mensajeIMC += "6.	Asistir al curso psicoprofilactico.<br>\n";
+        mensajeIMC += "7.	Si presenta algun sintoma de mareo, nauseas, vision borrosa, cansancio excesivo (signos de diabetes gestacional) debe acudir al servicio de urgencias.<br>\n";
+        mensajeIMC += "8.	Mitigar la ingesta de alimentos con alto contenido en sodio, grasas, azucares y carbohidratos.<br>\n";
+        mensajeIMC += "9.	Se sugiere plan dietario según para obtener ganancia de peso adecuado <br>\n";
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTA:</span><br>";
+        mensajeIMC += "ESTE PLAN DE ALIMENTACION ES GENERAL PARA SU CLASIFICACION NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL(NUTRICION) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICION ECONOMICA Y PREFERENCIAS"
       } else {
-        mensajeIMC += "OBESIDAD";
-        // Otras recomendaciones específicas para obesidad
+        mensajeIMC += '<span style="color: red;">OBESIDAD</span><br><br>';
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span><br>";
+        mensajeIMC += "Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 6 a 7 kg.<br>\n";
+        mensajeIMC += "Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico (nutricionista).<br>\n";
+        mensajeIMC += "Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>\n";
+        mensajeIMC += "Realizar actividad física moderada de su preferencia mínimo de 20 a 30 min diarios, se sugiere realizar caminatas en lugares amplios en los cuales cuentan con terrenos estables para prevenir accidentes.<br>\n";
+        mensajeIMC += "Asistir al curso psicoprofiláctico y seguir recomendaciones nutricionales y de actividad física.<br>\n";
+        mensajeIMC += "Si presenta algún síntoma de: mareo, náuseas, visión borrosa, pitos en los oídos, cansancio excesivo (signos de diabetes gestacional) debe acudir al servicio de urgencias.<br>\n";
+        mensajeIMC += "Mitigar la ingesta de alimentos con alto contenido en sodio, grasas, azúcares y carbohidratos.<br>\n";
+        mensajeIMC += "Aumentar la ingesta de alimentos saludable: proteínas, frutas y verduras.<br>\n";
+        mensajeIMC += "Se sugiere los siguientes alimentos los cuales van a contribuir a que mantenga una alimentación saludable y prevenir aumento de peso.<br>\n";
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTA:</span><br>";
+        mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
       }
   
       imcResult.innerHTML = mensajeIMC;
