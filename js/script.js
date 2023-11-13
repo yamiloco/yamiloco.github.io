@@ -87,18 +87,44 @@ function calcularIMC() {
         mensajeIMC += "4. Realizar actividad física moderada de su preferencia mínimo de 20 a 30 min diarios, e sugiere realizar caminatas en lugares amplios en los cuales cuentan con terrenos estables para prevenir accidentes.<br>";
         mensajeIMC += "5. Asistir al curso psicoprofiláctico y seguir recomendaciones nutricionales y de actividad física.<br>";
         mensajeIMC += "6. Alimentación saludable rica en: proteínas, frutas, verduras, lácteos, cereales y legumbres, siguiendo las recomendaciones brindadas por el profesional(nutricionista).<br>";
-        mensajeIMC += "7. Se sugiere algunos alimentos los cuales van a ayudar a que usted continúe con una dieta saludable:<br>";
-        mensajeIMC += "8. Durante la gestación, se debe aumentar el consumo de alimentos fuente de proteínas y hierro como las carnes (res, pollo, cerdo, pescado fresco) y vísceras (pajarilla, hígado), para prevenir la anemia y contribuir al crecimiento y desarrollo del bebé.<br>";
-        mensajeIMC += "- Se deben preferir siempre los alimentos frescos, naturales, propios de cada región del país<br>";
-        mensajeIMC += "- Durante la gestación, se debe aumentar el consumo de alimentos fuente de proteínas y hierro como las carnes (res, pollo, cerdo, pescado fresco) y vísceras (pajarilla, hígado), para prevenir la anemia y contribuir al crecimiento y desarrollo del bebé.<br>";
-        mensajeIMC += "- Consumir diariamente leche y productos lácteos como yogurt, kumis y queso fresco, por su alto contenido de proteínas y calcio que favorecen la formación del bebé y previenen la aparición de enfermedades como la osteoporosis en la madre. Prefiera los productos lácteos bajos en grasas y evite la crema de leche. <br>";
-        mensajeIMC += "- El huevo es fuente de proteína de alta calidad y es de bajo costo para la familia colombiana. Por tanto, se recomienda aumentar su consumo durante la gestación ya que favorece la formación y crecimiento del bebé y contribuye al mantenimiento de la salud de la madre. se recomienda consumirlo en preparaciones que no requieran adición de grasa o aceite.<br>";
-        mensajeIMC += "- Las leguminosas son fuente de proteínas de origen vegetal y fibra. aumente el consumo de leguminosas como el frijol, garbanzo, arveja y lentejas, combinadas con un cereal como el arroz para mejorar la calidad de sus nutrientes. con el consumo de leguminosas, se recomienda incluir una fruta rica en vitamina c como la guayaba, mandarina o naranja, ya que esto favorece la absorción del hierro en el cuerpo. Evite mezclar las leguminosas con lácteos; esto interfiere con la absorción del hierro en el cuerpo.<br>";
-        mensajeIMC += "- Aumente el consumo diario de frutas y verduras, preferiblemente enteras y las verduras crudas o al vapor. Esto contribuye a la buena digestión y garantiza el aporte necesario de vitaminas, minerales y fibra tanto para el bebé como para la madre, esenciales para el crecimiento y el funcionamiento del organismo. Además, se recomienda:<br>";
-        mensajeIMC += " * Consumirlas como parte de los refrigerios. Evite consumir productos de paquete.<br>";
-        mensajeIMC += " * Aprovechar las que estén en cosecha y sean de la región para disminuir los costos de la alimentación en la familia.<br>";
-        mensajeIMC += " * Disponer, en el hogar, de frutas y verduras listas para consumir en lugares visibles para motivar su ingesta en cualquier momento del día.<br>";
+        mensajeIMC += "7. Se sugiere plan dietario:<br>";
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>DESAYUNO</span><br>";
+        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>7:30 A.M.</span><br>";
+        mensajeIMC += "-	1 PORCIÓN DE LÁCTEOS CON CAFÉ DESCAFEINADO O CACAO.<br>";
+        mensajeIMC += "-	11 PORCIÓN DE FARINÁCEOS.<br>";
+        mensajeIMC += "EJEMPLO: 1 vaso de leche , 2 yogures,100 G queso fresco , 40 g queso semidescremado.<br>";
+        mensajeIMC += "-	1 PORCIÓN DE HARINA.<br>"
+        mensajeIMC += "EJEMPLO: 2 tostadas, 1 porción de pan de cereales, queso de untar o mermelada sin azúcar, 1 porción de pan de centeno con tomates frescos, aguacate o porción de frutas.<br>";
+        mensajeIMC += "-	11 PORCIÓN DE PROTEINA.<br>";
+        mensajeIMC += "EJEMPLO: 1 – 2 huevos (puede consumirlos todos los días) o 1 trozo de jamón.<br>";
+        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>10:30 A.M.</span><br>";
+        mensajeIMC += "- 1 PORCIÓN DE YOGUR CON NUECES<br>";
+        mensajeIMC += "- LECHE CON 2 TOSTADAS<br>";
+        mensajeIMC += "- PORCIÓN DE FRUTAS<br>";
+        mensajeIMC += "- PORCIÓN DE QUESO<br>";
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>ALMUERZO</span><br>";
+        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>1:30 A.M.</span><br>";
+        mensajeIMC += "-	1 FRUTA EN TROZO.<br>";
+        mensajeIMC += "-	1 PORCIÓN GRANDE DE ALIMENTO PROTEICO.<br>";
+        mensajeIMC += "EJEMPLO: Carne de res, pechuga de pollo sin piel o pescado<br>";
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTAS:</span><br>";
+        mensajeIMC += "-	1 O 2 PORCIONES DE VERDURAS:<br>";
+        mensajeIMC += "EJEMPLO: 1 porción de ensalada de verduras y/o 1 porción grande de verdura caliente + aguacate y/o aceite de oliva.<br>";
+        mensajeIMC += "UNA O MÁXIMO DOS PORCIONES DE HARINA.<br>";
+        mensajeIMC += "EJEMPLO: 1 pocillo tintero de arroz o de pasta, 1 papa mediana, 1 astilla de yuca, 1/2 de plátano asado o :5 cucharadas de frijol, garbanzo, lenteja o arveja seca.<br>";
+        mensajeIMC += "-	1 HORA DESPUÉS DEL ALMUERZO: 1 POCILLO DE AGUA AROMÁTICA DE FRUTAS SIN AZÚCAR.<br>";
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>ONCES</span><br>";
+        mensajeIMC += "-	1 fruta o 1 tortilla +queso o con pollo o carne de res desmechados o champiñones+ cubos de aguacate.<br>";
+        mensajeIMC += "-	1 vaso de leche o yogur descremado / semi yogur griego2 tostada o porción de queso o fruta.<br>";
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>COMIDA</span><br>";
+        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>6:30 - 7:00 P.M.</span><br>";
+        mensajeIMC += "\n\n<span style='color: black;'>OPCION # 1</span><br>";
+        mensajeIMC += "-	1 arepa de maíz sin mantequilla o 1 tortilla de maíz.<br>";
+        mensajeIMC += "-	1 porción de proteína: pollo deshilachado, carne molida o champiñones.<br>";
+        mensajeIMC += "-	1 vaso de limonada.<br>";
+        mensajeIMC += "\n\n<span style='color: black;'>OPCION # 2</span><br>";
+        mensajeIMC += "- 1 taza de crema natural de verduras + proteína 1 papa + 1 cucharada de aceite de oliva.<br>";
+        mensajeIMC += "- 1 arepa, galletas integrales, ¼ de plátano asado<br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
         
       } else if (imc >= 25.0 && imc <= 29.9) {
