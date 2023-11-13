@@ -62,9 +62,20 @@ function calcularIMC() {
         mensajeIMC += "EJEMPLO: 1 pocillo tintero de arroz o de pasta, 1 papa mediana, 1astilla de yuca 1/2 de plátano asado o :5 cucharadas de frijol, garbanzo, lenteja o arveja seca.<br>";
         mensajeIMC += "-	1 HORA DESPUÉS DEL ALMUERZO: 1 POCILLO DE AGUA AROMÁTICA DE FRUTAS SIN AZÚCAR<br>";
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>ONCES</span><br>";
+        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>4:00 P.M.</span><br>";
         mensajeIMC += "- 1 fruta o 1 tortilla +queso o con pollo o carne de res desmechados o champiñones + cubos de aguacate.<br>";
         mensajeIMC += "- 1 vaso de avena o yogurt normal o griego o 10 nueces, macadamias o almendras o 1 queso pera.<br>";
-        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>4:00 P.M.</span><br>";
+        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>COMIDA</span><br>";
+        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>6:30 - 7:00 P.M.</span><br>";
+        mensajeIMC += "\n\n<span style='color: black;'>OPCION # 1</span><br>";
+        mensajeIMC += "-	1 arepa de maíz sin mantequilla o 1 tortilla de maíz.<br>";
+        mensajeIMC += "-	1 porción de proteína: pollo deshilachado, carne molida o champiñones.<br>";
+        mensajeIMC += "-	1 vaso de limonada.<br>";
+        mensajeIMC += "\n\n<span style='color: black;'>OPCION # 2</span><br>";
+        mensajeIMC += "-	-	Similar al almuerzo en porciones más pequeñas.<br>";
+        mensajeIMC += "\n\n<span style='color: black;'>OPCION # 3</span><br>";
+        mensajeIMC += "-	1 taza de crema natural de verduras + proteína + 1 papa + 1 cucharada de aceite de oliva.<br>";
+        mensajeIMC += "-	1 arepa, galletas de maíz ,3 galletas o ¼ de plátano asado.<br>";
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTAS:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
       } else if (imc >= 20.0 && imc <= 24.9) {
