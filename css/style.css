@@ -55,9 +55,9 @@ body {
 }
 
 /*start recomendacion*/
-.custom-div2 {
-  margin-left: 40px;
-  margin-right: 40px;
+.custom-div {
+  margin-left: 30px;
+  margin-right: 30px;
   text-align: justify; /* Si también quieres justificar el texto */
 }
 /*end recomendacion */
