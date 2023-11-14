@@ -197,7 +197,7 @@ function calcularIMC() {
         mensajeIMC += "EJEMPLO: 1 – 2 huevos (puede consumirlos todos los días) o 1 trozo de jamón.<br>";
         mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>10:30 A.M.</span><br>";
         mensajeIMC += "- 1 PORCIÓN DE YOGUR CON NUECES.<br>";
-        mensajeIMC += "- LECHE CON 1 TOSTADA.br>";
+        mensajeIMC += "- LECHE CON 1 TOSTADA.<br>";
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>ALMUERZO</span><br>";
         mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>1:30 P.M.</span><br>";
         mensajeIMC += "- 1 FRUTA EN TROZO<br>";
