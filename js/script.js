@@ -33,7 +33,7 @@ function calcularIMC() {
       // Clasifica según el rango de peso para la edad gestacional y muestra recomendaciones
       if (imc < 20.0) {
         mensajeIMC += '<span style="color: FireBrick; font-weight: bold;">BAJO PESO PARA LA EDAD GESTACIONAL</span><br><br>';
-        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span><br>";
+        mensajeIMC += "\n\n<span style='color: #AED6F1 ; font-weight: bold;'>RECOMENDACIONES:</span><br>";
         mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 12 a 18 kg.<br>\n";
         mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
         mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>";
