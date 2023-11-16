@@ -31,6 +31,18 @@
 
     body {
     background-color: #E1F5FE;
+
+    * Estilos para centrar la imagen */
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa del viewport */
+        }
+        .centered-image img {
+            max-width: 100%; /* Ajustar la imagen al ancho del contenedor */
+            max-height: 100%; /* Ajustar la imagen a la altura del contenedor */
+        }
   }
 
 </style>
@@ -176,6 +188,10 @@
   * Prefiera el consumo de alimentos seguros: frescos, en lo posible orgánicos, cocidos o si se trata de verduras crudas asegurarse de que estén muy bien lavadas, prefiera frutas de cáscara gruesa o llévelas a cocción por unos minutos.<br>
   * No omita ninguna de las comidas del día y consumirlas en horarios regulares todos los días (idealmente cada tres horas).<br>
   * Coma despacio, mastique muy bien sus alimentos y no realice ningún otro tipo de actividad mientras come.<br>
+</div>
+
+<div class="centered-image">
+  <img src="images/nutricionrec.jpg" alt="">
 </div>
 
 <!-- Agregar la tabla de 4x2 -->
