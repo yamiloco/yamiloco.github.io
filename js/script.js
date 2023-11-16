@@ -176,8 +176,8 @@ function calcularIMC() {
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTA:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACION ES GENERAL PARA SU CLASIFICACION NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL(NUTRICION) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICION ECONOMICA Y PREFERENCIAS"
       } else {
-        mensajeIMC += '<span style="color: DarkBlue; font-weight: bold;">OBESIDAD</span><br><br>';
-        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>RECOMENDACIONES:</span><br>";
+        mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">OBESIDAD</span><br><br>';
+        mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
         mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 6 a 7 kg.<br>\n";
         mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico (nutricionista).<br>\n";
         mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>\n";
@@ -187,34 +187,34 @@ function calcularIMC() {
         mensajeIMC += "7. Mitigar la ingesta de alimentos con alto contenido en sodio, grasas, azúcares y carbohidratos.<br>\n";
         mensajeIMC += "8. Aumentar la ingesta de alimentos saludable: proteínas, frutas y verduras.<br>\n";
         mensajeIMC += "9. Se sugiere plan dietario:<br>\n";
-        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>DESAYUNO</span><br>";
-        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>7:30 A.M.</span><br>";
+        mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
+        mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>7:30 A.M.</span><br>";
         mensajeIMC += "- 1 RACIÓN DE LÁCTEOS.<br>";
         mensajeIMC += "- 1 PORCIÓN DE FARINÁCEOS.<br>";
         mensajeIMC += "EJEMPLO: 1 vaso de leche , 2 yogures, 100 G queso fresco , 40 g queso semi<br>";
-        mensajeIMC += "• 	Para una dieta equilibrada en una materna con obesidad  se recomienda escoger lácteos  descremados o semi descremado. <br>";
+        mensajeIMC += "• 	Para una dieta equilibrada en una materna con obesidad  se recomienda escoger lácteos  descremados o semi descremado.<br>";
         mensajeIMC += "- 1 PORCIÓN DE HARINA<br>";
         mensajeIMC += "EJEMPLO: 1 tostada, 1 porción de pan de cereales, queso de untar o mermelada sin azúcar , 1 porción de pan de centeno con tomates frescos o aguacate.<br>";
         mensajeIMC += "- 1 PORCIÓN DE PROTEÍNA<br>";
         mensajeIMC += "EJEMPLO: 1 – 2 huevos (puede consumirlos todos los días) o 1 trozo de jamón.<br>";
-        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>10:30 A.M.</span><br>";
+        mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>10:30 A.M.</span><br>";
         mensajeIMC += "- 1 PORCIÓN DE YOGUR CON NUECES.<br>";
         mensajeIMC += "- LECHE CON 1 TOSTADA.<br>";
-        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>ALMUERZO</span><br>";
-        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>1:30 P.M.</span><br>";
+        mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>ALMUERZO</span><br>";
+        mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>1:30 P.M.</span><br>";
         mensajeIMC += "- 1 FRUTA EN TROZO<br>";
         mensajeIMC += "- 1 PORCIÓN GRANDE DE ALIMENTO PROTEICO.<br>";
         mensajeIMC += "EJEMPLO: carne de res, pechuga de pollo sin piel o pescado.<br>";
         mensajeIMC += "- 1 O 2 PORCIONES DE VERDURAS:<br>";
         mensajeIMC += "EJEMPLO: 1 porción de ensalada de verduras y/o 1 porción grande de  verdura caliente + aguacate y/o aceite de oliva.<br>";
-        mensajeIMC += "- 1 UNA PORCIONES DE HARINA<br>";
+        mensajeIMC += "- UNA PORCION DE HARINA<br>";
         mensajeIMC += "EJEMPLO: 1 pocillo tintero de arroz o de pasta, 1 papa mediana, 1/2 de plátano asado o 5 cucharadas de frijol, garbanzo, lenteja o arveja seca.<br>";
         mensajeIMC += "- 1 HORA DESPUÉS DEL ALMUERZO: 1 POCILLO DE AGUA AROMÁTICA DE FRUTAS SIN AZÚCAR.<br>";
-        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>ONCES</span><br>";
-        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>4:00 P.M.</span><br>";
+        mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>ONCES</span><br>";
+        mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>4:00 P.M.</span><br>";
         mensajeIMC += "- 1 vaso de leche o yogur descremado / semi yogur  griego 1 tostada o porción de queso o fruta.<br>";
-        mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>COMIDA</span><br>";
-        mensajeIMC += "\n\n<span style='color: blue; font-weight: bold;'>6:30 - 7:00 P.M.</span><br>";
+        mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>COMIDA</span><br>";
+        mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>6:30 - 7:00 P.M.</span><br>";
         mensajeIMC += "- 1 taza de crema natural de verduras + proteína + 1 papa + 1 vaso de agua.<br>";
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTA:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
