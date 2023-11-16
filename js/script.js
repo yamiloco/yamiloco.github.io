@@ -36,10 +36,10 @@ function calcularIMC() {
         mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
         mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 12 a 18 kg.<br>\n";
         mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
-        mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>";
-        mensajeIMC += "4. Alimentación saludable rica en: proteínas, frutas, verduras, lácteos, cereales y legumbres, siguiendo las recomendaciones brindadas por el profesional (nutricionista).<br>";
+        mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio)..<br>";
+        mensajeIMC += "4. Alimentación saludable rica en: proteínas, frutas, verduras, lácteos, cereales y legumbres, siguiendo las recomendaciones brindadas por el profesional(nutricionista).<br>";
         mensajeIMC += "5. Asistir al curso psicoprofiláctico.<br>";
-        mensajeIMC += "6. Se sugieren algunos alimentos los cuales le van a ayudar a obtener una ganancia de peso adecuada.<br>";
+        mensajeIMC += "6. Se sugiere plan dietario para obtener ganancia de peso adecuada:<br>";
         mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
         mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>7:30 A.M.</span><br>";
         mensajeIMC += "- 1 TROZO DE FRUTA<br>";
@@ -132,14 +132,14 @@ function calcularIMC() {
       } else if (imc >= 25.0 && imc <= 29.9) {
         mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">SOBREPESO</span><br><br>';
         mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
-        mensajeIMC += "1.	Según su clasificacion nutricional al finalizar el embarazo debe obtener una ganancia de peso de 7 a 10 kg <br>\n";
-        mensajeIMC += "2.	Asistir a controles prenatales cada mes para seguimiento y manejo según criterio medico(nutricion)<br>\n";
-        mensajeIMC += "3.	Realizar toma oportuna y adecuada de micronutrientes (acido folico sulfato y calcio).<br>\n";
-        mensajeIMC += "4.	Realizar actividad fisica moderada como caminar 10 min 2 veces al dia, se sugiere realizar caminatas en lugares amplios en los cuales cuentan con terrenos estables para prevenir accidentes.<br>\n";
-        mensajeIMC += "5.	Alimentacion salidable rica en proteinas, frutas, verduras, y legunbres, sigfuiendo las recomendaciones brindadas por el profesional (nutricionista).<br>\n";
-        mensajeIMC += "6.	Asistir al curso psicoprofilactico.<br>\n";
-        mensajeIMC += "7.	Si presenta algun sintoma de mareo, nauseas, vision borrosa, cansancio excesivo (signos de diabetes gestacional) debe acudir al servicio de urgencias.<br>\n";
-        mensajeIMC += "8.	Mitigar la ingesta de alimentos con alto contenido en sodio, grasas, azucares y carbohidratos.<br>\n";
+        mensajeIMC += "1.	Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 7 a 10 kg.<br>\n";
+        mensajeIMC += "2.	Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
+        mensajeIMC += "3.	Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>\n";
+        mensajeIMC += "4.	Realizar actividad física moderada como caminar 10 min 2 veces al día, se sugiere realizar caminatas en lugares amplios en los cuales cuentan con terrenos estables para prevenir accidentes.<br>\n";
+        mensajeIMC += "5.	Alimentación saludable rica en proteínas, frutas y verduras, siguiendo las recomendaciones brindadas por el profesional (nutricionista).<br>\n";
+        mensajeIMC += "6.	Asistir al curso psicoprofiláctico.<br>\n";
+        mensajeIMC += "7.	Si presenta algún síntoma de: mareo, náuseas, visión borrosa, pitos en los oídos,cansancio excesivo (signos de diabetes gestacional) debe acudir al servicio de urgencias.<br>\n";
+        mensajeIMC += "8.	Mitigar la ingesta de alimentos con alto contenido en sodio, grasas, azúcares y carbohidratos.<br>\n";
         mensajeIMC += "9.	Se sugiere plan dietario para prevenir riesgo de obesidad:<br>\n";
         mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
         mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>7:30 A.M.</span><br>";
