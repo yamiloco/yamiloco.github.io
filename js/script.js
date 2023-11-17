@@ -29,6 +29,9 @@ function calcularIMC() {
       // Muestra el resultado en el elemento "imcResult"
       const imcResult = document.getElementById("imcResult");
       let mensajeIMC = `Tu IMC es: ${imc.toFixed(2)} - `;
+
+      <button id="recomendacionesBtn">Recomendaciones</button>
+      <button id="planDietarioBtn">Plan dietario</button>
   
       // Clasifica según el rango de peso para la edad gestacional y muestra recomendaciones
       if (imc < 20.0) {
