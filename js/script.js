@@ -18,6 +18,7 @@ function calcularIMC() {
     const imcResult = document.getElementById("imcResult");
     imcResult.innerHTML = "";
 
+
     // Obtén los valores de peso y talla del formulario
     const peso = parseFloat(document.getElementById("pesoActual").value);
     const talla = parseFloat(document.getElementById("talla").value);
@@ -30,20 +31,80 @@ function calcularIMC() {
       const imcResult = document.getElementById("imcResult");
       let mensajeIMC = `Tu IMC es: ${imc.toFixed(2)} - `;
 
-      <button id="recomendacionesBtn">Recomendaciones</button>
-      <button id="planDietarioBtn">Plan dietario</button>
-  
-      // Clasifica según el rango de peso para la edad gestacional y muestra recomendaciones
-      if (imc < 20.0) {
-        mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">BAJO PESO PARA LA EDAD GESTACIONAL</span><br><br>';
-        mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
-        mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 12 a 18 kg.<br>\n";
-        mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
-        mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio)..<br>";
-        mensajeIMC += "4. Alimentación saludable rica en: proteínas, frutas, verduras, lácteos, cereales y legumbres, siguiendo las recomendaciones brindadas por el profesional(nutricionista).<br>";
-        mensajeIMC += "5. Asistir al curso psicoprofiláctico.<br>";
-        mensajeIMC += "6. Se sugiere plan dietario para obtener ganancia de peso adecuada:<br>";
-        mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
+      // Función para mostrar recomendaciones
+      function mostrarRecomendaciones() {
+      const imc = parseFloat(document.getElementById("imc").textContent);
+      let mensaje = "";
+
+      // Lógica para determinar recomendaciones basadas en el IMC
+  if (imc < 20.0) {
+    // Recomendaciones para IMC menor a 20
+    mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">BAJO PESO PARA LA EDAD GESTACIONAL</span><br><br>';
+    mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
+    mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 12 a 18 kg.<br>\n";
+    mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
+    mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio)..<br>";
+    mensajeIMC += "4. Alimentación saludable rica en: proteínas, frutas, verduras, lácteos, cereales y legumbres, siguiendo las recomendaciones brindadas por el profesional(nutricionista).<br>";
+    mensajeIMC += "5. Asistir al curso psicoprofiláctico.<br>";
+    mensajeIMC += "6. Se sugiere plan dietario para obtener ganancia de peso adecuada:<br>";
+    mensaje = "Aquí van las recomendaciones para IMC menor a 20.";
+  } else if (imc >= 20.0 && imc <= 24.9) {
+    // Recomendaciones para IMC entre 20 y 24.9
+    mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">PESO ADECUADA PARA LA EDAD GESTACIONAL</span><br><br>';
+    mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
+    mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 10 a 13 kg.<br>\n";
+    mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
+    mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>";
+    mensajeIMC += "4. Realizar actividad física moderada de su preferencia mínimo de 20 a 30 min diarios.<br>";
+    mensajeIMC += "5. Asistir al curso psicoprofiláctico y seguir recomendaciones nutricionales y de actividad física.<br>";
+    mensajeIMC += "6. Alimentación saludable rica en: proteínas, frutas, verduras, lácteos, cereales y legumbres, siguiendo las recomendaciones brindadas por el profesional(nutricionista).<br>";
+    mensajeIMC += "7. Se sugiere plan dietario:<br>";
+    mensaje = "Aquí van las recomendaciones para IMC entre 20 y 24.9.";
+  } else if (imc >= 25.0 && imc <= 29.9) {
+    // Recomendaciones para IMC entre 25 y 29.9
+    mensaje = "Aquí van las recomendaciones para IMC entre 25 y 29.9.";
+    mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">SOBREPESO</span><br><br>';
+    mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
+    mensajeIMC += "1.	Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 7 a 10 kg.<br>\n";
+    mensajeIMC += "2.	Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
+    mensajeIMC += "3.	Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>\n";
+    mensajeIMC += "4.	Realizar actividad física moderada como caminar 10 min 2 veces al día, se sugiere realizar caminatas en lugares amplios en los cuales cuentan con terrenos estables para prevenir accidentes.<br>\n";
+    mensajeIMC += "5.	Alimentación saludable rica en proteínas, frutas y verduras, siguiendo las recomendaciones brindadas por el profesional (nutricionista).<br>\n";
+    mensajeIMC += "6.	Asistir al curso psicoprofiláctico.<br>\n";
+    mensajeIMC += "7.	Si presenta algún síntoma de: mareo, náuseas, visión borrosa, pitos en los oídos,cansancio excesivo (signos de diabetes gestacional) debe acudir al servicio de urgencias.<br>\n";
+    mensajeIMC += "8.	Mitigar la ingesta de alimentos con alto contenido en sodio, grasas, azúcares y carbohidratos.<br>\n";
+    mensajeIMC += "9.	Se sugiere plan dietario para prevenir riesgo de obesidad:<br>\n";
+  } else {
+    // Recomendaciones para IMC mayor a 29.9
+    mensaje = "Aquí van las recomendaciones para IMC mayor a 29.9.";
+    mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">OBESIDAD</span><br><br>';
+    mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
+    mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 6 a 7 kg.<br>\n";
+    mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico (nutricionista).<br>\n";
+    mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>\n";
+    mensajeIMC += "4. Realizar actividad física moderada de su preferencia mínimo de 20 a 30 min diarios, se sugiere realizar caminatas en lugares amplios en los cuales cuentan con terrenos estables para prevenir accidentes.<br>\n";
+    mensajeIMC += "5. Asistir al curso psicoprofiláctico y seguir recomendaciones nutricionales y de actividad física.<br>\n";
+    mensajeIMC += "6. Si presenta algún síntoma de: mareo, náuseas, visión borrosa, pitos en los oídos, cansancio excesivo (signos de diabetes gestacional) debe acudir al servicio de urgencias.<br>\n";
+    mensajeIMC += "7. Mitigar la ingesta de alimentos con alto contenido en sodio, grasas, azúcares y carbohidratos.<br>\n";
+    mensajeIMC += "8. Aumentar la ingesta de alimentos saludable: proteínas, frutas y verduras.<br>\n";
+    mensajeIMC += "9. Se sugiere plan dietario:<br>\n";
+  }
+
+
+  // Mostrar el mensaje en una ventana emergente
+  alert(mensaje);
+
+
+  // Función para mostrar el plan dietario
+function mostrarPlanDietario() {
+  const imc = parseFloat(document.getElementById("imc").textContent);
+  let mensaje = "";
+
+  // Lógica para determinar el plan dietario basado en el IMC
+  if (imc < 20.0) {
+    // Plan dietario para IMC menor a 20
+    mensaje = "Aquí va el plan dietario para IMC menor a 20.";
+    mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
         mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>7:30 A.M.</span><br>";
         mensajeIMC += "- 1 TROZO DE FRUTA<br>";
         mensajeIMC += "- 1 POCILLO DE UNA BEBIDA<br>";
@@ -81,17 +142,11 @@ function calcularIMC() {
         mensajeIMC += "-	1 arepa, galletas de maíz ,3 galletas o ¼ de plátano asado.<br>";
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTAS:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
-      } else if (imc >= 20.0 && imc <= 24.9) {
-        mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">PESO ADECUADA PARA LA EDAD GESTACIONAL</span><br><br>';
-        mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
-        mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 10 a 13 kg.<br>\n";
-        mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
-        mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>";
-        mensajeIMC += "4. Realizar actividad física moderada de su preferencia mínimo de 20 a 30 min diarios.<br>";
-        mensajeIMC += "5. Asistir al curso psicoprofiláctico y seguir recomendaciones nutricionales y de actividad física.<br>";
-        mensajeIMC += "6. Alimentación saludable rica en: proteínas, frutas, verduras, lácteos, cereales y legumbres, siguiendo las recomendaciones brindadas por el profesional(nutricionista).<br>";
-        mensajeIMC += "7. Se sugiere plan dietario:<br>";
-        mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
+
+  } else if (imc >= 20.0 && imc <= 24.9) {
+    // Plan dietario para IMC entre 20 y 24.9
+    mensaje = "Aquí va el plan dietario para IMC entre 20 y 24.9.";
+    mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
         mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>7:30 A.M.</span><br>";
         mensajeIMC += "-	1 PORCIÓN DE LÁCTEOS CON CAFÉ DESCAFEINADO O CACAO.<br>";
         mensajeIMC += "-	11 PORCIÓN DE FARINÁCEOS.<br>";
@@ -131,20 +186,10 @@ function calcularIMC() {
         mensajeIMC += "- 1 arepa, galletas integrales, ¼ de plátano asado<br>";
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTAS:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
-        
-      } else if (imc >= 25.0 && imc <= 29.9) {
-        mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">SOBREPESO</span><br><br>';
-        mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
-        mensajeIMC += "1.	Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 7 a 10 kg.<br>\n";
-        mensajeIMC += "2.	Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico.<br>\n";
-        mensajeIMC += "3.	Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>\n";
-        mensajeIMC += "4.	Realizar actividad física moderada como caminar 10 min 2 veces al día, se sugiere realizar caminatas en lugares amplios en los cuales cuentan con terrenos estables para prevenir accidentes.<br>\n";
-        mensajeIMC += "5.	Alimentación saludable rica en proteínas, frutas y verduras, siguiendo las recomendaciones brindadas por el profesional (nutricionista).<br>\n";
-        mensajeIMC += "6.	Asistir al curso psicoprofiláctico.<br>\n";
-        mensajeIMC += "7.	Si presenta algún síntoma de: mareo, náuseas, visión borrosa, pitos en los oídos,cansancio excesivo (signos de diabetes gestacional) debe acudir al servicio de urgencias.<br>\n";
-        mensajeIMC += "8.	Mitigar la ingesta de alimentos con alto contenido en sodio, grasas, azúcares y carbohidratos.<br>\n";
-        mensajeIMC += "9.	Se sugiere plan dietario para prevenir riesgo de obesidad:<br>\n";
-        mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
+  } else if (imc >= 25.0 && imc <= 29.9) {
+    // Plan dietario para IMC entre 25 y 29.9
+    mensaje = "Aquí va el plan dietario para IMC entre 25 y 29.9.";
+    mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
         mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>7:30 A.M.</span><br>";
         mensajeIMC += "- 1 RACIÓN DE LÁCTEOS<br>";
         mensajeIMC += "- 1 PORCIÓN DE FARINÁCEOS <br>";
@@ -178,19 +223,11 @@ function calcularIMC() {
         mensajeIMC += "- 1 vaso de limonada.<br>";
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTA:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACION ES GENERAL PARA SU CLASIFICACION NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL(NUTRICION) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICION ECONOMICA Y PREFERENCIAS"
-      } else {
-        mensajeIMC += '<span style="color: #E91E63; font-weight: bold;">OBESIDAD</span><br><br>';
-        mensajeIMC += "\n\n<span style='color: #BA68C8; font-weight: bold;'>RECOMENDACIONES:</span><br>";
-        mensajeIMC += "1. Según su clasificación nutricional al finalizar el embarazo debe obtener una ganancia de peso de 6 a 7 kg.<br>\n";
-        mensajeIMC += "2. Asistir a controles prenatales cada mes para seguimiento y manejo según criterio médico (nutricionista).<br>\n";
-        mensajeIMC += "3. Realizar toma oportuna y adecuada de micronutrientes (ácido fólico sulfato y calcio).<br>\n";
-        mensajeIMC += "4. Realizar actividad física moderada de su preferencia mínimo de 20 a 30 min diarios, se sugiere realizar caminatas en lugares amplios en los cuales cuentan con terrenos estables para prevenir accidentes.<br>\n";
-        mensajeIMC += "5. Asistir al curso psicoprofiláctico y seguir recomendaciones nutricionales y de actividad física.<br>\n";
-        mensajeIMC += "6. Si presenta algún síntoma de: mareo, náuseas, visión borrosa, pitos en los oídos, cansancio excesivo (signos de diabetes gestacional) debe acudir al servicio de urgencias.<br>\n";
-        mensajeIMC += "7. Mitigar la ingesta de alimentos con alto contenido en sodio, grasas, azúcares y carbohidratos.<br>\n";
-        mensajeIMC += "8. Aumentar la ingesta de alimentos saludable: proteínas, frutas y verduras.<br>\n";
-        mensajeIMC += "9. Se sugiere plan dietario:<br>\n";
-        mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
+
+  } else {
+    // Plan dietario para IMC mayor a 29.9
+    mensaje = "Aquí va el plan dietario para IMC mayor a 29.9.";
+    mensajeIMC += "\n\n<span style='color: #A3E4D7; font-weight: bold;'>DESAYUNO</span><br>";
         mensajeIMC += "\n\n<span style='color: #7FB3D5; font-weight: bold;'>7:30 A.M.</span><br>";
         mensajeIMC += "- 1 RACIÓN DE LÁCTEOS.<br>";
         mensajeIMC += "- 1 PORCIÓN DE FARINÁCEOS.<br>";
@@ -221,7 +258,17 @@ function calcularIMC() {
         mensajeIMC += "- 1 taza de crema natural de verduras + proteína + 1 papa + 1 vaso de agua.<br>";
         mensajeIMC += "\n\n<span style='color: black; font-weight: bold;'>NOTA:</span><br>";
         mensajeIMC += "ESTE PLAN DE ALIMENTACIÓN ES GENERAL PARA SU CLASIFICACIÓN NUTRICIONAL SI USTED DESEA PUEDE CONSULTAR CON EL PROFESIONAL (NUTRICIONISTA) PARA ESTABLECER UN PLAN DIETARIO SEGÚN SU CONDICIÓN ECONÓMICA Y PREFERENCIAS."
-      }
+
+  }
+
+  // Mostrar el mensaje en una ventana emergente
+  alert(mensaje);
+}
+
+
+// Asociar funciones a los botones
+document.getElementById("recomendacionesBtn").addEventListener("click", mostrarRecomendaciones);
+document.getElementById("planDietarioBtn").addEventListener("click", mostrarPlanDietario);
   
       imcResult.innerHTML = mensajeIMC;
     } else {
